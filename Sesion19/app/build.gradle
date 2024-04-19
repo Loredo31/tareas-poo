@@ -1,0 +1,25 @@
+plugins{
+    id 'java'
+}
+task mundo{
+    doLast{
+        println("Worlddd!!!")
+    }
+}
+
+jar{
+    manifest{
+        attributes 'main-class': 'Sesion19.HelloWorld'
+    }
+}
+
+task hello{
+    doLast{
+        for (int i = 0; i < 10; i++)
+        println 'Yo soy Batman'
+    }
+    def int a = 10;
+    def int b = 3;
+    sprintln (a*b)
+    sprintln (a/b)
+}
